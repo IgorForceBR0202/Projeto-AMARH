@@ -31,11 +31,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.admin',          # <- obrigatório para admin
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'documentos',                    # seu app
 ]
 
 MIDDLEWARE = [
@@ -53,8 +55,7 @@ ROOT_URLCONF = 'AMARH.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates']
-        ,
+        'DIRS': [],  # <- pasta global de templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
