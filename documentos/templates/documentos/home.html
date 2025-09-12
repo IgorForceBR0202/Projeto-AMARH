@@ -5,35 +5,69 @@
 
 {% block content %}
 
-    <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+    <div class="text-center">
+    <h2 class="mb-4">Bem-vindo à Associação</h2>
+    <p class="lead">Este é o conteúdo inicial da nossa página.</p>
 
-      <!-- Indicadores (bolinhas) -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#meuCarrossel" data-bs-slide-to="2"></button>
-      </div>
+    <!-- Seção de colunas -->
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Missão</h5>
+                    <p class="card-text">Promover integração e apoio à comunidade.</p>
+                </div>
+            </div>
+        </div>
 
-      <!-- Imagens -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="{% static 'documentos/img/dbd.jpg' %}" class="d-block w-100" alt="Imagem 1">
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Visão</h5>
+                    <p class="card-text">Ser referência em associativismo e solidariedade.</p>
+                </div>
+            </div>
         </div>
-        <div class="carousel-item">
-          <img src="{% static 'documentos/img/dbd2.jpg' %}" class="d-block w-100" alt="Imagem 2">
-        </div>
-        <div class="carousel-item">
-          <img src="{% static 'documentos/img/dbd.jpg' %}" class="d-block w-100" alt="Imagem 3">
-        </div>
-      </div>
 
-      <!-- Botões de navegação -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#meuCarrossel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#meuCarrossel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Valores</h5>
+                    <p class="card-text">Respeito, união e compromisso social.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrossel de imagens -->
+    <div id="carrosselAssoc" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'documentos/img/dbd2.jpg' %}" class="d-block w-100 rounded" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'documentos/img/dbd.jpg' %}" class="d-block w-100 rounded" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'documentos/img/DBD_main.jpg' %}" class="d-block w-100 rounded" alt="Imagem 3">
+            </div>
+        </div>
+
+        <!-- Botões de navegação -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrosselAssoc" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrosselAssoc" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+        <!-- Indicadores (bolinhas) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrosselAssoc" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carrosselAssoc" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carrosselAssoc" data-bs-slide-to="2"></button>
+        </div>
+    </div>
     </div>
 
 {% endblock %}

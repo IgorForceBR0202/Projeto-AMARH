@@ -1,16 +1,16 @@
 /* static/documentos/css/estilo.css */
 
-/* Cores padrões */
 
+/* Cores padrões */
 :root{
-  --amarh-yellow: #d0b537;
-  --amarh-teal:   #18ad9b;
-  --amarh-blue:   #0d6882;
-  --amarh-purple: #7c6a82;
-  --amarh-red:    #cc3037;
-  --amarh-gray:   #c8cdc1;
-  --amarh-dark:   #1b1b1b;
-  --amarh-white:  #fbfcfb;
+    --amarh-yellow: #d0b537;
+    --amarh-teal:   #18ad9b;
+    --amarh-blue:   #0d6882;
+    --amarh-purple: #7c6a82;
+    --amarh-red:    #cc3037;
+    --amarh-gray:   #c8cdc1;
+    --amarh-dark:   #1b1b1b;
+    --amarh-white:  #fbfcfb;
     --header: #343a40
 }
 
@@ -23,7 +23,7 @@
     text-decoration: none;
 }
 
-
+/* ---------------------------- HEADER ----------------------------- */
 section {
     padding: 3rem 2rem;
     margin: 0 auto;
@@ -98,7 +98,7 @@ section {
     background-color: #6c757d;
 }
 
-/* ---------------------------------------------------------------------------- */
+/* ---------------------------- FOOTER ----------------------------- */
 
 /* Footer customizado */
 /*
